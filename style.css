@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy';
+}
+
+#nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.uppernav{
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.356);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    letter-spacing: 4px;
+}
+.lowernav{
+    width: 100%;
+    height: 70px;
+    background-color: rgba(245, 245, 245, 0.349);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navlogo{
+    width: 100px;
+    height: 100%;
+    /* background-color: rebeccapurple; */
+}
+.navlogo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.navitems ul{
+    display: flex; 
+    list-style: none;
+    gap: 25px;
+}
+.navitems ul a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.rightnavitems{
+    height: 100%;
+    /* background-color: red; */
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.upperitems{
+    display: flex;
+    gap: 20px;
+}
+.upperitems a{
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+}
+.loweritems{
+    display: flex;
+    gap: 40px;
+    position: relative;
+    align-items: center;
+}
+.loweritems input{
+    padding-inline: 10px;
+    padding-block: 5px;
+}
+.searchglass{
+    position: absolute;
+    left: 150px;
+}
+.heroimg{
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+}
+.heroimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    backdrop-filter: blur(40px);
+}
+
+.herosection{
+    position: relative;
+}
+
+.herocontent{
+    width: 35%;
+    height: fit-content;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+}
+.herocontent p{
+    background-color: whitesmoke;
+    margin-block: 10px;
+    padding-inline: 10px;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+.herobtn{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.herobtn button{
+    padding-inline: 20px;
+    padding-block: 5px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+}
+.heromainheader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding-block: 30px;
+}
+
+.herocards{
+    width: 100%;
+    height: fit-content;
+    /* background-color: gray; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 30px;
+}
+.herocard{
+    width: 22%;
+    height: 70vh;
+    /* background-color: red; */
+}
+.cardimg{
+    width: 100%;
+    height: 80%;
+    background-color: yellow;
+}
+.cardimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 60px;
+}
+.cardcontent{
+    width: 100%;
+    /* height: 100%; */
+    padding-block: 5px;
+}
+.cardcontent h3,p,a{
+    padding-block: 5px;
+}
+.cardcontent a{
+    color: black;
+    font-size: 14px;
+}
+
+.offersection{
+    width: 100%;
+    height: fit-content;
+    margin-block: 30px;
+    position: relative;
+}
+.offersection img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.offercontent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 23%;
+    /* background-color: red; */
+    text-align: center;
+}
+
+.offercontent h1{
+    margin-block: 20px;
+    font-size: 30px;
+    color: white;
+}
+.offercontent button{
+    padding-inline: 30px;
+    padding-block: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    border-style: none;
+}
+
+.sportssection{
+    width: 100%;
+    height: 70vh;
+    /* background-color: red; */
+    padding-inline: 30px;
+}
+.sportssection h1{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-block-end: 35px;
+}
+.sportcards{
+    width: 100%;
+    height: 90%;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.sportcard{
+    height: 100%;
+    width: 22%;
+    /* background-color: maroon; */
+}
+.sportcard img{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    object-position: center;
+    /* margin-bottom: 20px; */
+}
+.sportcard a{
+    color: black;
+    display: block;
+    margin-top: 15px;
+    margin-inline-start: 10px;
+    font-size: 16px;
+}
+.sportsbtn{
+    width: 100%;
+    height: 20vh;
+    padding-block: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline-start: 40px;
+}
+.lsbtn button{
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+    border: 1px solid black;
+}
+.lsbtn button:first-child{
+    background-color: black;
+    color: white;   
+}
+.rsbtn a{
+    color: black;
+    font-size: 16px;
+    padding-inline-end: 20px;
+    font-weight: bold;
+}
+.footballteamsection{
+    height: fit-content;
+    width: 100%;
+    /* background-color: green; */
+    padding-block: 20px;
+}
+.footballteamsection h1{
+    padding-inline-start: 50px; 
+    padding-block: 20px;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.footballcards{
+    width: 100%;
+    height: fit-content;
+    /* background-color: red; */
+    padding-inline: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footballcard{
+    height: 100%;
+    width: 22%;
+    /* background-color: pink; */
+}
+.footballcard video{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    object-position: center;
+}
+.footballcard h3,p{
+    font-size: 16px;
+    padding-inline-start: 10px;
+}
+.footballcard a{
+    color: black;
+    font-size: 14px;
+    display: block;
+    padding-inline-start: 10px;
+}
+
+.popularitems{
+    width: 100%;
+    height: 50vh;
+    /* background-color: cyan; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-inline-start: 50px;
+}
+.popularheader{
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.populeritem{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 40px;
+}
+.popitem{
+    width: 30%;
+    border-bottom: 5px solid black;
+    font-size: 35px;
+    font-weight: 600;
+    /* background-color: red; */
+}
+
+.footerhead{
+    width: 100%;
+    height: 70vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.footheadcontent{
+    width: 60%;
+    height: 100%;
+    /* background-color: cyan; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 80px;
+}
+.footheadcontent img{
+    background-color: rgba(255, 255, 255, 0.525);
+    margin-top: 50px;
+    border-radius: 20px;
+}
+
+.footeritems{
+    width: 100%;
+    height: 20vh;
+    background-color: rgba(0, 0, 0, 0.824);
+    color: rgba(255, 255, 255, 0.509);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+}
+.footitem1{
+    display: flex;
+    gap: 30px;
+}
+.footitem1 a{
+    color: rgba(255, 255, 255, 0.505);
+    text-decoration: none;
+    border-right: 1px solid rgba(255, 255, 255, 0.505);
+    padding-right: 20px;
+}
